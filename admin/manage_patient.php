@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['edit_patient'])) {
     $contactno = sanitizeInput($_POST['contactno']);
     $password = sanitizeInput($_POST['password']);
 
-    $sql = "UPDATE patients SET Username='$username', Email='$email', contactno='$contactno', Password='$password' WHERE id='$patientId'";
+    $sql = "UPDATE patients SET Username='$username', Email='$email', contactno='$contactno', Password="YOUR_OWN_API_KEY" WHERE id='$patientId'";
 
     if ($conn->query($sql) === TRUE) {
         echo "Patient record updated successfully.";
