@@ -24,7 +24,7 @@ function send_mail($recipient,$subject,$message)
   $mail->Host       = "smtp.gmail.com";
   //$mail->Host       = "smtp.mail.yahoo.com";
   $mail->Username   = "mailtest8782@gmail.com";
-  $mail->Password   = "lnbiamwaqeodoffu"; 
+  $mail->Password   = "YOUR_OWN_API_KEY"; 
 
   $mail->IsHTML(true);
   $mail->AddAddress($recipient, "Esteemed user");
