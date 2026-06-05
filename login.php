@@ -16,7 +16,7 @@ if(isset($_POST['email'])){
     // secure the data
     $email=mysqli_real_escape_string($conn,$_POST['email']);
     $pass=mysqli_real_escape_string($conn,$_POST['pass']);	
-    $query=mysqli_query($conn,"SELECT * FROM patients WHERE email='$email'AND password='$pass'")or die("Could not check Member");
+    $query=mysqli_query($conn,"SELECT * FROM patients WHERE email='$email'AND password="YOUR_OWN_API_KEY"")or die("Could not check Member");
     $count_query=mysqli_num_rows($query);
     if($count_query==0){
         $message="The information you entered was incorrect!";
