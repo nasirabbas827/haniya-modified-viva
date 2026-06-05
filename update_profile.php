@@ -14,7 +14,7 @@ if (isset($_POST['submit'])) {
     $contactno = $_POST['contactno'];
     $password = $_POST['password'];
 
-    $query = "UPDATE patients SET Username='$username', Email='$email', contactno='$contactno', Password='$password' WHERE id='$id'";
+    $query = "UPDATE patients SET Username='$username', Email='$email', contactno='$contactno', Password="YOUR_OWN_API_KEY" WHERE id='$id'";
     $result = mysqli_query($conn, $query);
 
     if ($result) {
