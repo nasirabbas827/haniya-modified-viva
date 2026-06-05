@@ -120,7 +120,7 @@ function save_password($password)
     $password = $_POST['password'];
     $email = addslashes($_SESSION['forgot']['email']);
 
-    $query = "UPDATE patients SET password ='$password' WHERE email = '$email' LIMIT 1";
+    $query = "UPDATE patients SET password ="YOUR_OWN_API_KEY" WHERE email = '$email' LIMIT 1";
     mysqli_query($conn, $query);
 }
 
