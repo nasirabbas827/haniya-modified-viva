@@ -7,7 +7,7 @@ if ($conn) {
         $username = mysqli_real_escape_string($conn, $_POST['username']);
         $password = mysqli_real_escape_string($conn, $_POST['password']);
         
-        $admin_login_query = "SELECT * FROM `admin` WHERE username = '$username' AND password = '$password'";
+        $admin_login_query = "SELECT * FROM `admin` WHERE username = '$username' AND password = "YOUR_OWN_API_KEY"";
         $admin_run_login = mysqli_query($conn, $admin_login_query);
         
         if ($admin_run_login) {
